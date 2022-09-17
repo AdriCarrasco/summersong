@@ -62,7 +62,7 @@ if authentication_status:
         return new_list_
 
     st.title("Canción del verano")
-
+    st.write("Hola, "+ str(name))
 
     tab1, tab2 = st.tabs(["Vota", "Resultados"])
     with tab1:
@@ -158,6 +158,6 @@ if authentication_status:
         with col_0_2:
             fig = px.bar(data_grouped[0:3], x = "Canción", y = "Votos")
             st.plotly_chart(fig, use_container_width= True)
-
+    authenticator.logout('Logout', 'main')
 elif authentication_status == False:
     st.error('Username/password is incorrect')
