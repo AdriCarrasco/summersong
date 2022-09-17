@@ -1,4 +1,4 @@
 plotly
 boto3
 streamlit_elements
-stremlit_authenticator
+streamlit_authenticator
