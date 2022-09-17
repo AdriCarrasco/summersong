@@ -50,6 +50,7 @@ name, authentication_status, username = authenticator.login('Login', 'main')
 
 if authentication_status:
     dict_songs = GetJSON("data_songs.json")
+    
 
 
 
@@ -65,7 +66,7 @@ if authentication_status:
 
     tab1, tab2 = st.tabs(["Vota", "Resultados"])
     with tab1:
-        user_select = st.selectbox("Input user", options = pd.unique(dict_songs["users"]))
+        user_select = name
         select_player = st.checkbox("View YouTube Player")
         if select_player:
 
